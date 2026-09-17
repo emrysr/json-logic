@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Booking Logic Demo</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1/css/bulma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/json-logic-js@2/logic.js"></script>
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <h1 class="title">Booking Logic Demo</h1>
+    <h2 class="subtitle">Eligible players for a given teetime, via json-logic shared from /api/logic/booking</h2>
+
+    <div class="box">
+      <h3 class="title is-5">Check a teetime</h3>
+      <p class="help mb-4">Loaded server-side on first render via admin_demo.logic (Python). /api/logic/booking is fetched as soon as this page loads; the button below just re-runs the same rules client-side via json-logic-js, against whichever time you pick.</p>
+
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label class="label">Date</label>
+            <div class="control">
+              <input class="input" type="text" value="{{ fixed_date_display }}" disabled>
+            </div>
+            <p class="help">Fixed - the mocked teesheet response (/api/golf/teetimes/teesheet/1/2026/9/18/) is only for this one date.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="field">
+            <label class="label">Hour</label>
+            <div class="control">
+              <div class="select">
+                <select id="teetime-hour">
+                  {% for h in hour_options %}
+                  <option value="{{ h.hour }}"{% if h.hour == default_hour %} selected{% endif %}{% if not h.bookable %} disabled{% endif %}>{{ h.hour }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="field">
+            <label class="label">Minute</label>
+            <div class="control">
+              <div class="select">
+                <select id="teetime-minute">
+                  {% for m in minute_options_for_default_hour %}
+                  <option value="{{ m.minute }}"{% if m.minute == default_minute %} selected{% endif %}{% if not m.bookable %} disabled{% endif %}>{{ m.minute }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            <p class="help">Only the teesheet's actual bookable slots are selectable - unavailable ones are disabled.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="field">
+            <label class="label">Player search</label>
+            <div class="control">
+              <input class="input" type="text" value="ber" disabled>
+            </div>
+            <p class="help">Fixed - the player list below is the mocked response for a search of "ber" (/api/golf/player/search/?q=ber), not a live lookup.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="is-flex is-justify-content-space-between">
+      <button id="check-eligibility" class="button is-link">Find Eligible Players</button>
+      <p id="total-eligible"></p>
+      </div>
+      <div class="content mt-4">
+        <p><strong>Eligible category ids:</strong> <span id="eligible-categories" class="tag">{{ initial_eligible_category_ids|join:", " }}</span></p>
+        <p><strong>Min handicap:</strong> <span id="min-handicap" class="tag">{{ min_handicap }}</span></p>
+        <p class="help">club_1.ClubRules.rules.bookings.min_handicap</p>
+      </div>
+
+      
+
+      <table class="table is-fullwidth is-striped" id="results-table">
+        <thead>
+          <tr><th>Player</th><th>Category</th><th>Handicap</th><th>Club</th><th>Category OK</th><th>Min Handicap OK</th></tr>
+        </thead>
+        <tbody id="results-body">
+          {% for player, category_ok, handicap_ok in initial_rows %}
+          <tr{% if not category_ok or not handicap_ok %} class="has-text-grey-light"{% endif %}>
+            <td>{{ player.first_name }} {{ player.last_name }}</td>
+            <td>{{ player.category.name }}</td>
+            <td>{{ player.handicap }}</td>
+            <td>{{ player.club.name }}</td>
+            <td>
+              <span class="tag {% if category_ok %}is-success{% else %}is-danger is-light{% endif %}"{% if not category_ok %} title="{{ category_message }}"{% endif %}>
+                {% if category_ok %}Enabled{% else %}Disabled{% endif %}
+              </span>
+            </td>
+            <td>
+              <span class="tag {% if handicap_ok %}is-success{% else %}is-danger is-light{% endif %}"{% if not handicap_ok %} title="{{ handicap_message }}"{% endif %}>
+                {% if handicap_ok %}Enabled{% else %}Disabled{% endif %}
+              </span>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box">
+      <h3 class="title is-5">Raw input data</h3>
+      <p class="help mb-4">Untouched - exactly the fixture data (mocked API responses), before anything is merged in. Cross-reference any row here against the parameters below to work out the result by hand.</p>
+
+      <details class="mb-4">
+        <summary><strong>Teesheet fairway ruleset rules (raw)</strong></summary>
+        <pre id="raw-rules-output">{{ initial_raw_rules_json }}</pre>
+      </details>
+
+      <details>
+        <summary><strong>Players (raw)</strong></summary>
+        <pre id="raw-players-output">{{ initial_raw_players_json }}</pre>
+      </details>
+    </div>
+
+    <div class="box">
+      <h3 class="title is-5">Parameters used for this check</h3>
+      <p class="help mb-4">Everything computed from your chosen time, merged onto each rule/player right before evaluation (as target_day/target_time/eligible_category_ids/min_handicap) - not part of the raw data itself.</p>
+      <pre id="parameters-output">{{ initial_parameters_json }}</pre>
+    </div>
+
+    <div class="box">
+      <h3 class="title is-5">json-logic rule (rendered server-side; re-fetched from /api/logic/booking on re-check)</h3>
+      <pre id="rule-output">{{ initial_rule_output_json }}</pre>
+    </div>
+  </div>
+</section>
+
+<script>
+const RULESET_RULES = {{ teesheet_rules_json|safe }};
+const PLAYERS = {{ players_json|safe }};
+const MIN_HANDICAP = {{ min_handicap }};
+const FIXED_DATE_ISO = '{{ fixed_date_iso }}';
+const SLOT_TIMES = {{ slot_times_json|safe }};
+
+function populateMinutesForHour(hour) {
+  const select = document.getElementById('teetime-minute');
+  const previousValue = select.value;
+  select.innerHTML = '';
+  SLOT_TIMES
+    .filter(s => s.time.slice(0, 2) === hour)
+    .forEach(s => {
+      const minute = s.time.slice(3, 5);
+      const option = document.createElement('option');
+      option.value = minute;
+      option.textContent = minute;
+      if (!s.bookable) option.disabled = true;
+      select.appendChild(option);
+    });
+
+  const stillValid = [...select.options].some(o => o.value === previousValue && !o.disabled);
+  if (stillValid) {
+    select.value = previousValue;
+  } else {
+    const firstBookable = [...select.options].find(o => !o.disabled);
+    select.value = firstBookable ? firstBookable.value : select.options[0].value;
+  }
+}
+
+document.getElementById('teetime-hour').addEventListener('change', (e) => {
+  populateMinutesForHour(e.target.value);
+  checkEligibility();
+});
+
+let eligibleCategoriesLogic = null;
+let playersEligibleFlagsLogic = null;
+let playersMeetMinHandicapLogic = null;
+let categoryMessage = '';
+let handicapMessage = '';
+let logicLoaded = loadLogic();
+
+async function loadLogic() {
+  const res = await fetch('/api/logic/booking');
+  const data = await res.json();
+  eligibleCategoriesLogic = data.eligible_categories_for_teetime.rule;
+  playersEligibleFlagsLogic = data.players_eligible_flags.rule;
+  playersMeetMinHandicapLogic = data.players_meet_min_handicap.rule;
+  categoryMessage = data.players_eligible_flags.message;
+  handicapMessage = data.players_meet_min_handicap.message;
+  document.getElementById('rule-output').textContent = JSON.stringify(data, null, 2);
+}
+
+function isoWeekday(date) {
+  const day = date.getDay();
+  return day === 0 ? 7 : day;
+}
+
+function timeString(date) {
+  return date.toTimeString().slice(0, 8);
+}
+
+async function checkEligibility() {
+  await logicLoaded;
+
+  const hourValue = document.getElementById('teetime-hour').value;
+  const minuteValue = document.getElementById('teetime-minute').value;
+  const teetime = new Date(`${FIXED_DATE_ISO}T${hourValue}:${minuteValue}:00`);
+  const targetDay = isoWeekday(teetime);
+  const targetTime = timeString(teetime);
+
+  const augmentedRules = RULESET_RULES.map(rule => ({
+    ...rule,
+    target_day: targetDay,
+    target_time: targetTime,
+  }));
+
+  const eligibleCategoryIds = [...new Set(
+    jsonLogic.apply(eligibleCategoriesLogic, { rules: augmentedRules })
+  )];
+
+  document.getElementById('eligible-categories').textContent = eligibleCategoryIds.join(', ') || 'none';
+  document.getElementById('min-handicap').textContent = MIN_HANDICAP;
+
+  const augmentedByCategory = PLAYERS.map(p => ({ ...p, eligible_category_ids: eligibleCategoryIds }));
+  const categoryFlags = jsonLogic.apply(playersEligibleFlagsLogic, { players: augmentedByCategory });
+
+  const augmentedByHandicap = PLAYERS.map(p => ({ ...p, min_handicap: MIN_HANDICAP }));
+  const handicapFlags = jsonLogic.apply(playersMeetMinHandicapLogic, { players: augmentedByHandicap });
+
+  document.getElementById('parameters-output').textContent = JSON.stringify({
+    target_day: targetDay,
+    target_time: targetTime,
+    eligible_category_ids: eligibleCategoryIds,
+    min_handicap: MIN_HANDICAP,
+  }, null, 2);
+
+  const tag = (ok, message) => {
+    const title = ok ? '' : ` title="${message}"`;
+    return `<span class="tag ${ok ? 'is-success' : 'is-danger is-light'}"${title}>${ok ? 'Enabled' : 'Disabled'}</span>`;
+  };
+
+  const tbody = document.getElementById('results-body');
+  tbody.innerHTML = '';
+  PLAYERS.forEach((p, i) => {
+    const categoryOk = categoryFlags[i];
+    const handicapOk = handicapFlags[i];
+    const tr = document.createElement('tr');
+    if (!categoryOk || !handicapOk) tr.classList.add('has-text-grey-light');
+    tr.innerHTML = `
+      <td>${p.first_name} ${p.last_name} (${p.gender.name})</td>
+      <td>${p.category.name}</td>
+      <td>${p.handicap}</td>
+      <td>${p.club.name}</td>
+      <td>${tag(categoryOk, categoryMessage)}</td>
+      <td>${tag(handicapOk, handicapMessage)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+  document.getElementById('total-eligible').textContent = PLAYERS.filter((p, i) => categoryFlags[i] && handicapFlags[i]).length;
+}
+
+document.getElementById('check-eligibility').addEventListener('click', checkEligibility);
+document.getElementById('teetime-minute').addEventListener('change', checkEligibility);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Django==6.1.1
+djangorestframework==3.18.1
+django-json-widget==2.1.1
+json-logic-qubit==0.9.1
