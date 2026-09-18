@@ -13,11 +13,24 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         User = get_user_model()
-        if not User.objects.filter(username="admin").exists():
-            User.objects.create_superuser("admin", "admin@example.com", "admin")
-            self.stdout.write(self.style.SUCCESS("Created superuser admin/admin"))
-        else:
-            self.stdout.write("Superuser admin already exists, skipping")
+        # Idempotent by design: always leaves admin/admin in a working state,
+        # rather than only setting the password on first creation. Running
+        # this again after a migration/db reset is the intended way to fix
+        # a wiped or forgotten demo password, no separate changepassword step.
+        user, created = User.objects.get_or_create(
+            username="admin", defaults={"email": "admin@example.com"}
+        )
+        user.set_password("admin")
+        user.is_staff = True
+        user.is_superuser = True
+        user.save()
+        self.stdout.write(
+            self.style.SUCCESS(
+                "Created superuser admin/admin"
+                if created
+                else "Reset admin's password back to admin/admin"
+            )
+        )
 
         if ClubRules.objects.exists():
             self.stdout.write("ClubRules already seeded, skipping")
