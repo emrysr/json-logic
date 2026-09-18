@@ -33,24 +33,34 @@ truth for business rules shared between Python (server-side) and JavaScript
 
 ## Setup
 
+One-time steps to get a working local environment:
+
 ```bash
+git clone https://github.com/emrysr/json-logic.git
+cd json-logic
+
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate       # re-run this in every new terminal session
 pip install -r requirements.txt
+
+chmod +x manage.py              # if ./manage.py isn't already executable
+./manage.py migrate             # creates admin_demo.sqlite3 and applies all migrations
+./manage.py seed_demo_data      # creates the admin/admin superuser + club_1/club_2 ClubRules
 ```
+
+`admin_demo.sqlite3` is gitignored and local to your machine - nothing above
+touches the repo itself.
 
 ## Running
 
-Standard Django workflow:
-
 ```bash
-./manage.py migrate
-./manage.py seed_demo_data   # creates admin/admin superuser + club_1/club_2 ClubRules
+source .venv/bin/activate       # if not already active
 ./manage.py runserver
 ```
 
 - **Admin:** http://localhost:8000/admin/ (login `admin` / `admin`) -
-  `Club ruless` shows the FormKit-rendered booking rules for each club.
+  `Club ruless` shows the FormKit-rendered booking rules for each club. The
+  login page itself also shows these credentials as a reminder.
 - **Logic demo:** http://localhost:8000/ (or http://localhost:8000/logic-demo/)
   - pick a teetime (from the mocked teesheet's actual bookable slots) and see
   which players are eligible to book, broken down by category rule and by
@@ -58,6 +68,25 @@ Standard Django workflow:
   used to compute it.
 - **API:** http://localhost:8000/api/logic/booking - the raw json-logic rule
   trees, as fetched by the demo page's JS.
+
+`./manage.py runserver` auto-reloads on Python/template changes, same as any
+standard Django project - no restart needed after editing code.
+
+## Troubleshooting
+
+- **`admin`/`admin` login fails, or you ran a migration and it stopped
+  working.** Re-run the seed command - it's idempotent and always resets
+  `admin`'s password back to `admin`, even if the account already exists:
+  ```bash
+  ./manage.py seed_demo_data
+  ```
+- **Starting from a clean slate.** Delete `admin_demo.sqlite3`, then repeat
+  the `migrate` + `seed_demo_data` steps from Setup above. This only affects
+  your local database file - the fixture data in `admin_demo/fixtures/` is
+  unaffected and version-controlled as normal.
+- **`ModuleNotFoundError` / `django` not found.** Your virtualenv likely isn't
+  active - run `source .venv/bin/activate` first, or check you're using
+  `.venv/bin/python`/`.venv/bin/pip` directly if you'd rather not activate it.
 
 ## Mock data
 
@@ -68,5 +97,4 @@ counterparts' JSON structure, but hand-edited to make the rule filtering
 visibly do something (e.g. the `Guest` category is restricted to afternoon
 bookings, `Colt` to before-noon bookings). Edit these files directly to try
 different scenarios; the page re-reads them on every request, no restart
-needed. `./manage.py runserver` auto-reloads on Python/template changes like
-any standard Django project.
+needed.
