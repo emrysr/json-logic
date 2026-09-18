@@ -15,6 +15,10 @@ DATABASES = {
 }
 
 INSTALLED_APPS = [
+    # Listed before django.contrib.admin so admin_demo/templates/admin/*
+    # overrides (e.g. login.html) are found first by the app_directories
+    # template loader.
+    "admin_demo",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -23,7 +27,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_json_widget",
     "rest_framework",
-    "admin_demo",
 ]
 
 MIDDLEWARE = [
