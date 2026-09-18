@@ -26,7 +26,7 @@
     },
     "club": {
       "id": 1,
-      "name": "Long Ashton Golf Club"
+      "name": "Willowbrook Golf Club"
     },
     "image": {
       "url": "https://golf.test.ws-django.co.uk/media/profiles/admin.jpg",
@@ -46,7 +46,7 @@
             "season_id": 9,
             "fairway": {
               "id": 1,
-              "name": "Abergele"
+              "name": "Bracken Vale"
             },
             "category": {
               "id": 1,
@@ -185,7 +185,7 @@
       {
         "fairway": {
           "id": 1,
-          "name": "Abergele",
+          "name": "Bracken Vale",
           "ordering": 1,
           "holes": 18,
           "is_loopback": false,
@@ -194,7 +194,7 @@
             {
               "course": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "direction": {
                 "id": 1,
@@ -205,7 +205,7 @@
             {
               "course": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "direction": {
                 "id": 2,
@@ -222,7 +222,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 21,
@@ -263,7 +263,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 21,
@@ -304,7 +304,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 29,
@@ -345,7 +345,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 29,
@@ -386,7 +386,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 8,
@@ -427,7 +427,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 8,
@@ -468,7 +468,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 9,
@@ -509,7 +509,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 9,
@@ -550,7 +550,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 10,
@@ -591,7 +591,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 10,
@@ -632,7 +632,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 13,
@@ -673,7 +673,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 13,
@@ -714,7 +714,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 1,
@@ -755,7 +755,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 4,
@@ -796,7 +796,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 4,
@@ -837,7 +837,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 3,
@@ -878,7 +878,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 3,
@@ -919,7 +919,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 2,
@@ -960,7 +960,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 2,
@@ -1001,7 +1001,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 14,
@@ -1042,7 +1042,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 14,
@@ -1083,7 +1083,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 15,
@@ -1124,7 +1124,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 11,
@@ -1165,7 +1165,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 6,
@@ -1206,7 +1206,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 6,
@@ -1247,7 +1247,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 7,
@@ -1288,7 +1288,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 7,
@@ -1329,7 +1329,7 @@
               "season_id": 9,
               "fairway": {
                 "id": 1,
-                "name": "Abergele"
+                "name": "Bracken Vale"
               },
               "category": {
                 "id": 5,
