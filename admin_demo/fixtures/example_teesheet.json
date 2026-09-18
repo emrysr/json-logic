@@ -2,10 +2,10 @@
   "player": {
     "player_id": 6,
     "profile_id": 1,
-    "first_name": "Joshua",
-    "last_name": "Moss",
-    "email": "admin@communit-us.live",
-    "initials": "SA",
+    "first_name": "Demo",
+    "last_name": "Player",
+    "email": "",
+    "initials": "DP",
     "category": {
       "id": 1,
       "name": "Platinum",

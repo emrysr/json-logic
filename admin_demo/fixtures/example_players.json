@@ -2,10 +2,10 @@
   {
     "player_id": 2557,
     "profile_id": 2557,
-    "first_name": "M",
-    "last_name": "Berg",
+    "first_name": "Player1",
+    "last_name": "Test1",
     "email": "",
-    "initials": "PC",
+    "initials": "P1",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -39,10 +39,10 @@
   {
     "player_id": 2188,
     "profile_id": 2188,
-    "first_name": "Bryan",
-    "last_name": "Berry",
+    "first_name": "Player2",
+    "last_name": "Test2",
     "email": "",
-    "initials": "MN",
+    "initials": "P2",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -76,10 +76,10 @@
   {
     "player_id": 2013,
     "profile_id": 2013,
-    "first_name": "Joseph",
-    "last_name": "Berry",
+    "first_name": "Player3",
+    "last_name": "Test3",
     "email": "",
-    "initials": "MB",
+    "initials": "P3",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -113,10 +113,10 @@
   {
     "player_id": 3080,
     "profile_id": 3080,
-    "first_name": "Bernard",
-    "last_name": "Smith",
+    "first_name": "Player4",
+    "last_name": "Test4",
     "email": "",
-    "initials": "SH",
+    "initials": "P4",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -150,10 +150,10 @@
   {
     "player_id": 2126,
     "profile_id": 2126,
-    "first_name": "Bernard",
-    "last_name": "Reeves",
+    "first_name": "Player5",
+    "last_name": "Test5",
     "email": "",
-    "initials": "MD",
+    "initials": "P5",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -187,10 +187,10 @@
   {
     "player_id": 429,
     "profile_id": 429,
-    "first_name": "Mohammed",
-    "last_name": "Barber",
+    "first_name": "Player6",
+    "last_name": "Test6",
     "email": "",
-    "initials": "MW",
+    "initials": "P6",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -224,10 +224,10 @@
   {
     "player_id": 2825,
     "profile_id": 2825,
-    "first_name": "Dale",
-    "last_name": "Berry",
+    "first_name": "Player7",
+    "last_name": "Test7",
     "email": "",
-    "initials": "RS",
+    "initials": "P7",
     "category": {
       "id": 5,
       "name": "Colt",
@@ -261,10 +261,10 @@
   {
     "player_id": 2350,
     "profile_id": 2350,
-    "first_name": "Josh",
-    "last_name": "Berry",
+    "first_name": "Player8",
+    "last_name": "Test8",
     "email": "",
-    "initials": "NH",
+    "initials": "P8",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -298,10 +298,10 @@
   {
     "player_id": 2017,
     "profile_id": 2017,
-    "first_name": "Billy",
-    "last_name": "Berry",
+    "first_name": "Player9",
+    "last_name": "Test9",
     "email": "",
-    "initials": "MD",
+    "initials": "P9",
     "category": {
       "id": 5,
       "name": "Colt",
@@ -335,10 +335,10 @@
   {
     "player_id": 788,
     "profile_id": 788,
-    "first_name": "Jack",
-    "last_name": "Berry",
+    "first_name": "Player10",
+    "last_name": "Test10",
     "email": "",
-    "initials": "DB",
+    "initials": "P10",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -372,10 +372,10 @@
   {
     "player_id": 34,
     "profile_id": 34,
-    "first_name": "Ryan",
-    "last_name": "Berry",
+    "first_name": "Player11",
+    "last_name": "Test11",
     "email": "",
-    "initials": "LT",
+    "initials": "P11",
     "category": {
       "id": 1,
       "name": "Platinum",
@@ -409,10 +409,10 @@
   {
     "player_id": 2672,
     "profile_id": 2672,
-    "first_name": "Richard",
-    "last_name": "Harber",
+    "first_name": "Player12",
+    "last_name": "Test12",
     "email": "",
-    "initials": "RH",
+    "initials": "P12",
     "category": {
       "id": 41,
       "name": "Pro Staff",
@@ -446,10 +446,10 @@
   {
     "player_id": 1867,
     "profile_id": 1867,
-    "first_name": "Danny",
-    "last_name": "Berry",
+    "first_name": "Player13",
+    "last_name": "Test13",
     "email": "",
-    "initials": "CJ",
+    "initials": "P13",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -483,10 +483,10 @@
   {
     "player_id": 1623,
     "profile_id": 1623,
-    "first_name": "Paige",
-    "last_name": "Berry",
+    "first_name": "Player14",
+    "last_name": "Test14",
     "email": "",
-    "initials": "SG",
+    "initials": "P14",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -520,10 +520,10 @@
   {
     "player_id": 1413,
     "profile_id": 1413,
-    "first_name": "Stuart",
-    "last_name": "Berry",
+    "first_name": "Player15",
+    "last_name": "Test15",
     "email": "",
-    "initials": "RB",
+    "initials": "P15",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -557,10 +557,10 @@
   {
     "player_id": 2869,
     "profile_id": 2869,
-    "first_name": "Callum",
-    "last_name": "Berry",
+    "first_name": "Player16",
+    "last_name": "Test16",
     "email": "",
-    "initials": "SB",
+    "initials": "P16",
     "category": {
       "id": 5,
       "name": "Colt",
@@ -594,10 +594,10 @@
   {
     "player_id": 35,
     "profile_id": 35,
-    "first_name": "Connor",
-    "last_name": "Berry",
+    "first_name": "Player17",
+    "last_name": "Test17",
     "email": "",
-    "initials": "SR",
+    "initials": "P17",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -631,10 +631,10 @@
   {
     "player_id": 2208,
     "profile_id": 2208,
-    "first_name": "Bernard",
-    "last_name": "West",
+    "first_name": "Player18",
+    "last_name": "Test18",
     "email": "",
-    "initials": "ML",
+    "initials": "P18",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -668,10 +668,10 @@
   {
     "player_id": 590,
     "profile_id": 590,
-    "first_name": "Martin",
-    "last_name": "Berry",
+    "first_name": "Player19",
+    "last_name": "Test19",
     "email": "",
-    "initials": "EW",
+    "initials": "P19",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -705,10 +705,10 @@
   {
     "player_id": 1712,
     "profile_id": 1712,
-    "first_name": "Dennis",
-    "last_name": "Berry",
+    "first_name": "Player20",
+    "last_name": "Test20",
     "email": "",
-    "initials": "RH",
+    "initials": "P20",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -742,10 +742,10 @@
   {
     "player_id": 718,
     "profile_id": 718,
-    "first_name": "Bernard",
-    "last_name": "Patel",
+    "first_name": "Player21",
+    "last_name": "Test21",
     "email": "",
-    "initials": "SB",
+    "initials": "P21",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -779,10 +779,10 @@
   {
     "player_id": 2131,
     "profile_id": 2131,
-    "first_name": "Matthew",
-    "last_name": "Baber",
+    "first_name": "Player22",
+    "last_name": "Test22",
     "email": "",
-    "initials": "MB",
+    "initials": "P22",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -816,10 +816,10 @@
   {
     "player_id": 2984,
     "profile_id": 2984,
-    "first_name": "Simon",
-    "last_name": "Bergman",
-    "email": "simon.bergman9@gmail.com",
-    "initials": "SB",
+    "first_name": "Player23",
+    "last_name": "Test23",
+    "email": "",
+    "initials": "P23",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -853,10 +853,10 @@
   {
     "player_id": 3357,
     "profile_id": 3357,
-    "first_name": "Alexandra",
-    "last_name": "Berry",
+    "first_name": "Player24",
+    "last_name": "Test24",
     "email": "",
-    "initials": "WN",
+    "initials": "P24",
     "category": {
       "id": 5,
       "name": "Colt",
@@ -890,10 +890,10 @@
   {
     "player_id": 2532,
     "profile_id": 2532,
-    "first_name": "Bernard",
-    "last_name": "Chadwick",
+    "first_name": "Player25",
+    "last_name": "Test25",
     "email": "",
-    "initials": "PN",
+    "initials": "P25",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -927,10 +927,10 @@
   {
     "player_id": 58,
     "profile_id": 58,
-    "first_name": "Jason-Bernard",
-    "last_name": "James",
+    "first_name": "Player26",
+    "last_name": "Test26",
     "email": "",
-    "initials": "JC",
+    "initials": "P26",
     "category": {
       "id": 29,
       "name": "Gold",
@@ -964,10 +964,10 @@
   {
     "player_id": 384,
     "profile_id": 384,
-    "first_name": "Ash",
-    "last_name": "Baber",
-    "email": "ashbaber49@hotmail.co.uk",
-    "initials": "CS",
+    "first_name": "Player27",
+    "last_name": "Test27",
+    "email": "",
+    "initials": "P27",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1001,10 +1001,10 @@
   {
     "player_id": 852,
     "profile_id": 852,
-    "first_name": "Amber",
-    "last_name": "Ward",
+    "first_name": "Player28",
+    "last_name": "Test28",
     "email": "",
-    "initials": "CS",
+    "initials": "P28",
     "category": {
       "id": 18,
       "name": "Badminton",
@@ -1038,10 +1038,10 @@
   {
     "player_id": 489,
     "profile_id": 489,
-    "first_name": "Billy",
-    "last_name": "Herbert",
-    "email": "billy.herbert@aol.com",
-    "initials": "JP",
+    "first_name": "Player29",
+    "last_name": "Test29",
+    "email": "",
+    "initials": "P29",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1075,10 +1075,10 @@
   {
     "player_id": 476,
     "profile_id": 476,
-    "first_name": "Berty",
-    "last_name": "Taylor",
-    "email": "taylor.berty98@gmail.com",
-    "initials": "GB",
+    "first_name": "Player30",
+    "last_name": "Test30",
+    "email": "",
+    "initials": "P30",
     "category": {
       "id": 38,
       "name": "Staff",
@@ -1112,10 +1112,10 @@
   {
     "player_id": 117,
     "profile_id": 117,
-    "first_name": "Amber",
-    "last_name": "Morgan",
+    "first_name": "Player31",
+    "last_name": "Test31",
     "email": "",
-    "initials": "WE",
+    "initials": "P31",
     "category": {
       "id": 1,
       "name": "Platinum",
@@ -1149,10 +1149,10 @@
   {
     "player_id": 475,
     "profile_id": 475,
-    "first_name": "Bertie",
-    "last_name": "Southgate",
-    "email": "bertiesouthgate@icloud.com",
-    "initials": "HR",
+    "first_name": "Player32",
+    "last_name": "Test32",
+    "email": "",
+    "initials": "P32",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1186,10 +1186,10 @@
   {
     "player_id": 1311,
     "profile_id": 1311,
-    "first_name": "Incoming",
-    "last_name": "Member",
+    "first_name": "Player33",
+    "last_name": "Test33",
     "email": "",
-    "initials": "AS",
+    "initials": "P33",
     "category": {
       "id": 9,
       "name": "Incoming",
@@ -1223,10 +1223,10 @@
   {
     "player_id": 2400,
     "profile_id": 2400,
-    "first_name": "Peter  A",
-    "last_name": "Roberts",
+    "first_name": "Player34",
+    "last_name": "Test34",
     "email": "",
-    "initials": "NB",
+    "initials": "P34",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1260,10 +1260,10 @@
   {
     "player_id": 279,
     "profile_id": 279,
-    "first_name": "Amanda",
-    "last_name": "Baber",
-    "email": "domandjake@gmail.com",
-    "initials": "CS",
+    "first_name": "Player35",
+    "last_name": "Test35",
+    "email": "",
+    "initials": "P35",
     "category": {
       "id": 15,
       "name": "Silver",
@@ -1297,10 +1297,10 @@
   {
     "player_id": 449,
     "profile_id": 449,
-    "first_name": "I V",
-    "last_name": "Roberts",
+    "first_name": "Player36",
+    "last_name": "Test36",
     "email": "",
-    "initials": "PF",
+    "initials": "P36",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1334,10 +1334,10 @@
   {
     "player_id": 1667,
     "profile_id": 1667,
-    "first_name": "Jonny",
-    "last_name": "Furber",
-    "email": "jonny@furber.co.uk",
-    "initials": "TJ",
+    "first_name": "Player37",
+    "last_name": "Test37",
+    "email": "",
+    "initials": "P37",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1371,10 +1371,10 @@
   {
     "player_id": 2656,
     "profile_id": 2656,
-    "first_name": "Kate",
-    "last_name": "Roberts",
+    "first_name": "Player38",
+    "last_name": "Test38",
     "email": "",
-    "initials": "RA",
+    "initials": "P38",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1408,10 +1408,10 @@
   {
     "player_id": 512,
     "profile_id": 512,
-    "first_name": "Albert",
-    "last_name": "Clark",
+    "first_name": "Player39",
+    "last_name": "Test39",
     "email": "",
-    "initials": "LG",
+    "initials": "P39",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1445,10 +1445,10 @@
   {
     "player_id": 430,
     "profile_id": 430,
-    "first_name": "Robert",
-    "last_name": "Clark",
+    "first_name": "Player40",
+    "last_name": "Test40",
     "email": "",
-    "initials": "PC",
+    "initials": "P40",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1482,10 +1482,10 @@
   {
     "player_id": 1836,
     "profile_id": 1836,
-    "first_name": "Kimberley",
-    "last_name": "Parker",
-    "email": "ndparker@blueyonder.co.uk",
-    "initials": "AG",
+    "first_name": "Player41",
+    "last_name": "Test41",
+    "email": "",
+    "initials": "P41",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1519,10 +1519,10 @@
   {
     "player_id": 2925,
     "profile_id": 2925,
-    "first_name": "Craig",
-    "last_name": "Gilbert",
+    "first_name": "Player42",
+    "last_name": "Test42",
     "email": "",
-    "initials": "SL",
+    "initials": "P42",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1556,10 +1556,10 @@
   {
     "player_id": 335,
     "profile_id": 335,
-    "first_name": "Dewi W",
-    "last_name": "Roberts",
+    "first_name": "Player43",
+    "last_name": "Test43",
     "email": "",
-    "initials": "MD",
+    "initials": "P43",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1593,10 +1593,10 @@
   {
     "player_id": 630,
     "profile_id": 630,
-    "first_name": "Joshua",
-    "last_name": "Roberts",
+    "first_name": "Player44",
+    "last_name": "Test44",
     "email": "",
-    "initials": "BS",
+    "initials": "P44",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1630,10 +1630,10 @@
   {
     "player_id": 1096,
     "profile_id": 1096,
-    "first_name": "Dennis",
-    "last_name": "Roberts",
+    "first_name": "Player45",
+    "last_name": "Test45",
     "email": "",
-    "initials": "JD",
+    "initials": "P45",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1667,10 +1667,10 @@
   {
     "player_id": 150,
     "profile_id": 150,
-    "first_name": "Robert H",
-    "last_name": "Jinks",
+    "first_name": "Player46",
+    "last_name": "Test46",
     "email": "",
-    "initials": "LM",
+    "initials": "P46",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1704,10 +1704,10 @@
   {
     "player_id": 560,
     "profile_id": 560,
-    "first_name": "Carly",
-    "last_name": "Momber",
-    "email": "cmomber@gmail.com",
-    "initials": "GT",
+    "first_name": "Player47",
+    "last_name": "Test47",
+    "email": "",
+    "initials": "P47",
     "category": {
       "id": 15,
       "name": "Silver",
@@ -1741,10 +1741,10 @@
   {
     "player_id": 179,
     "profile_id": 179,
-    "first_name": "Robert  L",
-    "last_name": "Hughes",
+    "first_name": "Player48",
+    "last_name": "Test48",
     "email": "",
-    "initials": "DD",
+    "initials": "P48",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1778,10 +1778,10 @@
   {
     "player_id": 3163,
     "profile_id": 3163,
-    "first_name": "Robert T",
-    "last_name": "Davies",
+    "first_name": "Player49",
+    "last_name": "Test49",
     "email": "",
-    "initials": "TT",
+    "initials": "P49",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1815,10 +1815,10 @@
   {
     "player_id": 1889,
     "profile_id": 1889,
-    "first_name": "Les",
-    "last_name": "Maber",
-    "email": "lesmaber@hotmail.co.uk",
-    "initials": "GS",
+    "first_name": "Player50",
+    "last_name": "Test50",
+    "email": "",
+    "initials": "P50",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1852,10 +1852,10 @@
   {
     "player_id": 2614,
     "profile_id": 2614,
-    "first_name": "D Arthur",
-    "last_name": "Roberts",
+    "first_name": "Player51",
+    "last_name": "Test51",
     "email": "",
-    "initials": "PS",
+    "initials": "P51",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1889,10 +1889,10 @@
   {
     "player_id": 1951,
     "profile_id": 1951,
-    "first_name": "Louis",
-    "last_name": "Momber",
-    "email": "louismomber@outlook.com",
-    "initials": "KH",
+    "first_name": "Player52",
+    "last_name": "Test52",
+    "email": "",
+    "initials": "P52",
     "category": {
       "id": 10,
       "name": "Junior",
@@ -1926,10 +1926,10 @@
   {
     "player_id": 2581,
     "profile_id": 2581,
-    "first_name": "Robert",
-    "last_name": "Greenwood",
+    "first_name": "Player53",
+    "last_name": "Test53",
     "email": "",
-    "initials": "PO",
+    "initials": "P53",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -1963,10 +1963,10 @@
   {
     "player_id": 3314,
     "profile_id": 3314,
-    "first_name": "Frederick",
-    "last_name": "Roberts",
+    "first_name": "Player54",
+    "last_name": "Test54",
     "email": "",
-    "initials": "VW",
+    "initials": "P54",
     "category": {
       "id": 18,
       "name": "Badminton",
@@ -2000,10 +2000,10 @@
   {
     "player_id": 1631,
     "profile_id": 1631,
-    "first_name": "John",
-    "last_name": "Webber",
-    "email": "johnwebber37@yahoo.co.uk",
-    "initials": "BC",
+    "first_name": "Player55",
+    "last_name": "Test55",
+    "email": "",
+    "initials": "P55",
     "category": {
       "id": 15,
       "name": "Silver",
@@ -2037,10 +2037,10 @@
   {
     "player_id": 2624,
     "profile_id": 2624,
-    "first_name": "Phillip",
-    "last_name": "Webber",
-    "email": "phillipjw77@gmail.com",
-    "initials": "PW",
+    "first_name": "Player56",
+    "last_name": "Test56",
+    "email": "",
+    "initials": "P56",
     "category": {
       "id": 15,
       "name": "Silver",
@@ -2074,10 +2074,10 @@
   {
     "player_id": 700,
     "profile_id": 700,
-    "first_name": "Colin",
-    "last_name": "Robertson",
-    "email": "colin.robertson78@btinternet.com",
-    "initials": "MB",
+    "first_name": "Player57",
+    "last_name": "Test57",
+    "email": "",
+    "initials": "P57",
     "category": {
       "id": 15,
       "name": "Silver",
@@ -2111,10 +2111,10 @@
   {
     "player_id": 2742,
     "profile_id": 2742,
-    "first_name": "Robert",
-    "last_name": "Jones",
-    "email": "rob.jones81@btinternet.com",
-    "initials": "RJ",
+    "first_name": "Player58",
+    "last_name": "Test58",
+    "email": "",
+    "initials": "P58",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2148,10 +2148,10 @@
   {
     "player_id": 731,
     "profile_id": 731,
-    "first_name": "Cuthbert",
-    "last_name": "Brain",
-    "email": "c.brain152@btinternet.com",
-    "initials": "GF",
+    "first_name": "Player59",
+    "last_name": "Test59",
+    "email": "",
+    "initials": "P59",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2185,10 +2185,10 @@
   {
     "player_id": 2743,
     "profile_id": 2743,
-    "first_name": "Robert",
-    "last_name": "Jones",
-    "email": "rjones271@btinternet.com",
-    "initials": "RJ",
+    "first_name": "Player60",
+    "last_name": "Test60",
+    "email": "",
+    "initials": "P60",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2222,10 +2222,10 @@
   {
     "player_id": 1267,
     "profile_id": 1267,
-    "first_name": "J",
-    "last_name": "Roberts",
+    "first_name": "Player61",
+    "last_name": "Test61",
     "email": "",
-    "initials": "JP",
+    "initials": "P61",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2259,10 +2259,10 @@
   {
     "player_id": 2048,
     "profile_id": 2048,
-    "first_name": "Mark",
-    "last_name": "Holloway",
-    "email": "bomberboy07@hotmail.co.uk",
-    "initials": "MH",
+    "first_name": "Player62",
+    "last_name": "Test62",
+    "email": "",
+    "initials": "P62",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2296,10 +2296,10 @@
   {
     "player_id": 2338,
     "profile_id": 2338,
-    "first_name": "G J",
-    "last_name": "Roberts",
+    "first_name": "Player63",
+    "last_name": "Test63",
     "email": "",
-    "initials": "NR",
+    "initials": "P63",
     "category": {
       "id": 1,
       "name": "Platinum",
@@ -2333,10 +2333,10 @@
   {
     "player_id": 1173,
     "profile_id": 1173,
-    "first_name": "E W",
-    "last_name": "Roberts",
+    "first_name": "Player64",
+    "last_name": "Test64",
     "email": "",
-    "initials": "JH",
+    "initials": "P64",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2370,10 +2370,10 @@
   {
     "player_id": 1157,
     "profile_id": 1157,
-    "first_name": "Robert",
-    "last_name": "Smith",
+    "first_name": "Player65",
+    "last_name": "Test65",
     "email": "",
-    "initials": "JO",
+    "initials": "P65",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2407,10 +2407,10 @@
   {
     "player_id": 2832,
     "profile_id": 2832,
-    "first_name": "A P",
-    "last_name": "Roberts",
+    "first_name": "Player66",
+    "last_name": "Test66",
     "email": "",
-    "initials": "RH",
+    "initials": "P66",
     "category": {
       "id": 21,
       "name": "Bronze",
@@ -2444,10 +2444,10 @@
   {
     "player_id": 3071,
     "profile_id": 3071,
-    "first_name": "Alberto",
-    "last_name": "Alves",
+    "first_name": "Player67",
+    "last_name": "Test67",
     "email": "",
-    "initials": "SA",
+    "initials": "P67",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2481,10 +2481,10 @@
   {
     "player_id": 1578,
     "profile_id": 1578,
-    "first_name": "Sion",
-    "last_name": "Roberts",
+    "first_name": "Player68",
+    "last_name": "Test68",
     "email": "",
-    "initials": "DR",
+    "initials": "P68",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2518,10 +2518,10 @@
   {
     "player_id": 1386,
     "profile_id": 1386,
-    "first_name": "Robert",
-    "last_name": "Evans",
+    "first_name": "Player69",
+    "last_name": "Test69",
     "email": "",
-    "initials": "MB",
+    "initials": "P69",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2555,10 +2555,10 @@
   {
     "player_id": 1813,
     "profile_id": 1813,
-    "first_name": "Alex",
-    "last_name": "Roberts",
+    "first_name": "Player70",
+    "last_name": "Test70",
     "email": "",
-    "initials": "GM",
+    "initials": "P70",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2592,10 +2592,10 @@
   {
     "player_id": 2038,
     "profile_id": 2038,
-    "first_name": "Robert",
-    "last_name": "Jones",
+    "first_name": "Player71",
+    "last_name": "Test71",
     "email": "",
-    "initials": "MC",
+    "initials": "P71",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2629,10 +2629,10 @@
   {
     "player_id": 2232,
     "profile_id": 2232,
-    "first_name": "Aled",
-    "last_name": "Roberts",
+    "first_name": "Player72",
+    "last_name": "Test72",
     "email": "",
-    "initials": "MA",
+    "initials": "P72",
     "category": {
       "id": 21,
       "name": "Bronze",
@@ -2666,10 +2666,10 @@
   {
     "player_id": 2387,
     "profile_id": 2387,
-    "first_name": "Robert",
-    "last_name": "Lynch",
+    "first_name": "Player73",
+    "last_name": "Test73",
     "email": "",
-    "initials": "NK",
+    "initials": "P73",
     "category": {
       "id": 21,
       "name": "Bronze",
@@ -2703,10 +2703,10 @@
   {
     "player_id": 2565,
     "profile_id": 2565,
-    "first_name": "Gail",
-    "last_name": "Roberts",
+    "first_name": "Player74",
+    "last_name": "Test74",
     "email": "",
-    "initials": "PG",
+    "initials": "P74",
     "category": {
       "id": 21,
       "name": "Bronze",
@@ -2740,10 +2740,10 @@
   {
     "player_id": 2643,
     "profile_id": 2643,
-    "first_name": "Albert",
-    "last_name": "Cooke",
+    "first_name": "Player75",
+    "last_name": "Test75",
     "email": "",
-    "initials": "RH",
+    "initials": "P75",
     "category": {
       "id": 5,
       "name": "Colt",
@@ -2777,10 +2777,10 @@
   {
     "player_id": 2606,
     "profile_id": 2606,
-    "first_name": "Iwan",
-    "last_name": "Roberts",
+    "first_name": "Player76",
+    "last_name": "Test76",
     "email": "",
-    "initials": "PJ",
+    "initials": "P76",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2814,10 +2814,10 @@
   {
     "player_id": 2748,
     "profile_id": 2748,
-    "first_name": "Robert",
-    "last_name": "Lloyd",
+    "first_name": "Player77",
+    "last_name": "Test77",
     "email": "",
-    "initials": "RL",
+    "initials": "P77",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2851,10 +2851,10 @@
   {
     "player_id": 2840,
     "profile_id": 2840,
-    "first_name": "Paul",
-    "last_name": "Roberts",
+    "first_name": "Player78",
+    "last_name": "Test78",
     "email": "",
-    "initials": "RH",
+    "initials": "P78",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2888,10 +2888,10 @@
   {
     "player_id": 348,
     "profile_id": 348,
-    "first_name": "Frank",
-    "last_name": "Roberts",
+    "first_name": "Player79",
+    "last_name": "Test79",
     "email": "",
-    "initials": "JE",
+    "initials": "P79",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2925,10 +2925,10 @@
   {
     "player_id": 546,
     "profile_id": 546,
-    "first_name": "David",
-    "last_name": "Herbert",
+    "first_name": "Player80",
+    "last_name": "Test80",
     "email": "",
-    "initials": "LA",
+    "initials": "P80",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2962,10 +2962,10 @@
   {
     "player_id": 3044,
     "profile_id": 3044,
-    "first_name": "Robert",
-    "last_name": "Hellen",
+    "first_name": "Player81",
+    "last_name": "Test81",
     "email": "",
-    "initials": "SN",
+    "initials": "P81",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -2999,10 +2999,10 @@
   {
     "player_id": 2732,
     "profile_id": 2732,
-    "first_name": "Robert",
-    "last_name": "Cousar",
+    "first_name": "Player82",
+    "last_name": "Test82",
     "email": "",
-    "initials": "RC",
+    "initials": "P82",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3036,10 +3036,10 @@
   {
     "player_id": 2745,
     "profile_id": 2745,
-    "first_name": "Robert",
-    "last_name": "Jordan",
+    "first_name": "Player83",
+    "last_name": "Test83",
     "email": "",
-    "initials": "RJ",
+    "initials": "P83",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3073,10 +3073,10 @@
   {
     "player_id": 2087,
     "profile_id": 2087,
-    "first_name": "Robert",
-    "last_name": "Hughes",
+    "first_name": "Player84",
+    "last_name": "Test84",
     "email": "",
-    "initials": "MC",
+    "initials": "P84",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3110,10 +3110,10 @@
   {
     "player_id": 2746,
     "profile_id": 2746,
-    "first_name": "Robert",
-    "last_name": "Stewart",
+    "first_name": "Player85",
+    "last_name": "Test85",
     "email": "",
-    "initials": "RK",
+    "initials": "P85",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3147,10 +3147,10 @@
   {
     "player_id": 1131,
     "profile_id": 1131,
-    "first_name": "D",
-    "last_name": "Roberts(Jnr)",
+    "first_name": "Player86",
+    "last_name": "Test86",
     "email": "",
-    "initials": "EM",
+    "initials": "P86",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3184,10 +3184,10 @@
   {
     "player_id": 3115,
     "profile_id": 3115,
-    "first_name": "Harry",
-    "last_name": "Roberts",
+    "first_name": "Player87",
+    "last_name": "Test87",
     "email": "",
-    "initials": "SS",
+    "initials": "P87",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3221,10 +3221,10 @@
   {
     "player_id": 972,
     "profile_id": 972,
-    "first_name": "Robert",
-    "last_name": "Davies",
+    "first_name": "Player88",
+    "last_name": "Test88",
     "email": "",
-    "initials": "CH",
+    "initials": "P88",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3258,10 +3258,10 @@
   {
     "player_id": 3233,
     "profile_id": 3233,
-    "first_name": "Robin",
-    "last_name": "Gilbert",
+    "first_name": "Player89",
+    "last_name": "Test89",
     "email": "",
-    "initials": "TG",
+    "initials": "P89",
     "category": {
       "id": 22,
       "name": "Clergy",
@@ -3295,10 +3295,10 @@
   {
     "player_id": 2877,
     "profile_id": 2877,
-    "first_name": "David",
-    "last_name": "Roberts",
+    "first_name": "Player90",
+    "last_name": "Test90",
     "email": "",
-    "initials": "SF",
+    "initials": "P90",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3332,10 +3332,10 @@
   {
     "player_id": 408,
     "profile_id": 408,
-    "first_name": "Robert",
-    "last_name": "Taylor",
+    "first_name": "Player91",
+    "last_name": "Test91",
     "email": "",
-    "initials": "JL",
+    "initials": "P91",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3369,10 +3369,10 @@
   {
     "player_id": 72,
     "profile_id": 72,
-    "first_name": "Robert",
-    "last_name": "Wilson",
+    "first_name": "Player92",
+    "last_name": "Test92",
     "email": "",
-    "initials": "BH",
+    "initials": "P92",
     "category": {
       "id": 29,
       "name": "Gold",
@@ -3406,10 +3406,10 @@
   {
     "player_id": 831,
     "profile_id": 831,
-    "first_name": "Julia",
-    "last_name": "Roberts",
+    "first_name": "Player93",
+    "last_name": "Test93",
     "email": "",
-    "initials": "RP",
+    "initials": "P93",
     "category": {
       "id": 18,
       "name": "Badminton",
@@ -3443,10 +3443,10 @@
   {
     "player_id": 1887,
     "profile_id": 1887,
-    "first_name": "G J (Jim)",
-    "last_name": "Roberts",
+    "first_name": "Player94",
+    "last_name": "Test94",
     "email": "",
-    "initials": "RW",
+    "initials": "P94",
     "category": {
       "id": 1,
       "name": "Platinum",
@@ -3480,10 +3480,10 @@
   {
     "player_id": 2979,
     "profile_id": 2979,
-    "first_name": "Arthur",
-    "last_name": "Roberts",
+    "first_name": "Player95",
+    "last_name": "Test95",
     "email": "",
-    "initials": "SB",
+    "initials": "P95",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3517,10 +3517,10 @@
   {
     "player_id": 3113,
     "profile_id": 3113,
-    "first_name": "Robert",
-    "last_name": "Stanley",
+    "first_name": "Player96",
+    "last_name": "Test96",
     "email": "",
-    "initials": "SS",
+    "initials": "P96",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3554,10 +3554,10 @@
   {
     "player_id": 835,
     "profile_id": 835,
-    "first_name": "Albert",
-    "last_name": "Watkins",
+    "first_name": "Player97",
+    "last_name": "Test97",
     "email": "",
-    "initials": "MW",
+    "initials": "P97",
     "category": {
       "id": 5,
       "name": "Colt",
@@ -3591,10 +3591,10 @@
   {
     "player_id": 2512,
     "profile_id": 2512,
-    "first_name": "Robert",
-    "last_name": "Pearson",
+    "first_name": "Player98",
+    "last_name": "Test98",
     "email": "",
-    "initials": "PH",
+    "initials": "P98",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3628,10 +3628,10 @@
   {
     "player_id": 227,
     "profile_id": 227,
-    "first_name": "Russell",
-    "last_name": "Roberts",
+    "first_name": "Player99",
+    "last_name": "Test99",
     "email": "",
-    "initials": "PL",
+    "initials": "P99",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3665,10 +3665,10 @@
   {
     "player_id": 2034,
     "profile_id": 2034,
-    "first_name": "Adam P",
-    "last_name": "Roberts",
+    "first_name": "Player100",
+    "last_name": "Test100",
     "email": "",
-    "initials": "MC",
+    "initials": "P100",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3702,10 +3702,10 @@
   {
     "player_id": 1826,
     "profile_id": 1826,
-    "first_name": "Melvyn",
-    "last_name": "Roberts",
+    "first_name": "Player101",
+    "last_name": "Test101",
     "email": "",
-    "initials": "AW",
+    "initials": "P101",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3739,10 +3739,10 @@
   {
     "player_id": 2915,
     "profile_id": 2915,
-    "first_name": "Albert",
-    "last_name": "Walters",
+    "first_name": "Player102",
+    "last_name": "Test102",
     "email": "",
-    "initials": "SS",
+    "initials": "P102",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3776,10 +3776,10 @@
   {
     "player_id": 3323,
     "profile_id": 3323,
-    "first_name": "Lewis John",
-    "last_name": "Knight-Roberts",
+    "first_name": "Player103",
+    "last_name": "Test103",
     "email": "",
-    "initials": "WB",
+    "initials": "P103",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3813,10 +3813,10 @@
   {
     "player_id": 3255,
     "profile_id": 3255,
-    "first_name": "Sylvia",
-    "last_name": "Gilbert",
+    "first_name": "Player104",
+    "last_name": "Test104",
     "email": "",
-    "initials": "TS",
+    "initials": "P104",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3850,10 +3850,10 @@
   {
     "player_id": 3223,
     "profile_id": 3223,
-    "first_name": "Robert W",
-    "last_name": "Jones",
+    "first_name": "Player105",
+    "last_name": "Test105",
     "email": "",
-    "initials": "TC",
+    "initials": "P105",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3887,10 +3887,10 @@
   {
     "player_id": 2108,
     "profile_id": 2108,
-    "first_name": "Gina O",
-    "last_name": "Roberts",
+    "first_name": "Player106",
+    "last_name": "Test106",
     "email": "",
-    "initials": "MO",
+    "initials": "P106",
     "category": {
       "id": 1,
       "name": "Platinum",
@@ -3924,10 +3924,10 @@
   {
     "player_id": 570,
     "profile_id": 570,
-    "first_name": "Kimberley",
-    "last_name": "Ward",
+    "first_name": "Player107",
+    "last_name": "Test107",
     "email": "",
-    "initials": "KG",
+    "initials": "P107",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3961,10 +3961,10 @@
   {
     "player_id": 1625,
     "profile_id": 1625,
-    "first_name": "Eric W",
-    "last_name": "Roberts",
+    "first_name": "Player108",
+    "last_name": "Test108",
     "email": "",
-    "initials": "LR",
+    "initials": "P108",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -3998,10 +3998,10 @@
   {
     "player_id": 2964,
     "profile_id": 2964,
-    "first_name": "Robert",
-    "last_name": "Marshall",
+    "first_name": "Player109",
+    "last_name": "Test109",
     "email": "",
-    "initials": "SE",
+    "initials": "P109",
     "category": {
       "id": 18,
       "name": "Badminton",
@@ -4035,10 +4035,10 @@
   {
     "player_id": 2553,
     "profile_id": 2553,
-    "first_name": "Steve A",
-    "last_name": "Roberts",
+    "first_name": "Player110",
+    "last_name": "Test110",
     "email": "",
-    "initials": "PC",
+    "initials": "P110",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4072,10 +4072,10 @@
   {
     "player_id": 2590,
     "profile_id": 2590,
-    "first_name": "Enfys  M",
-    "last_name": "Roberts",
+    "first_name": "Player111",
+    "last_name": "Test111",
     "email": "",
-    "initials": "PW",
+    "initials": "P111",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4109,10 +4109,10 @@
   {
     "player_id": 1567,
     "profile_id": 1567,
-    "first_name": "David C",
-    "last_name": "Roberts",
+    "first_name": "Player112",
+    "last_name": "Test112",
     "email": "",
-    "initials": "SO",
+    "initials": "P112",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4146,10 +4146,10 @@
   {
     "player_id": 2702,
     "profile_id": 2702,
-    "first_name": "Geraint",
-    "last_name": "Roberts",
+    "first_name": "Player113",
+    "last_name": "Test113",
     "email": "",
-    "initials": "RW",
+    "initials": "P113",
     "category": {
       "id": 21,
       "name": "Bronze",
@@ -4183,10 +4183,10 @@
   {
     "player_id": 1149,
     "profile_id": 1149,
-    "first_name": "Kimberley",
-    "last_name": "Smith",
+    "first_name": "Player114",
+    "last_name": "Test114",
     "email": "",
-    "initials": "DW",
+    "initials": "P114",
     "category": {
       "id": 17,
       "name": "Academy",
@@ -4220,10 +4220,10 @@
   {
     "player_id": 2988,
     "profile_id": 2988,
-    "first_name": "William",
-    "last_name": "Roberts",
+    "first_name": "Player115",
+    "last_name": "Test115",
     "email": "",
-    "initials": "SB",
+    "initials": "P115",
     "category": {
       "id": 18,
       "name": "Badminton",
@@ -4257,10 +4257,10 @@
   {
     "player_id": 3057,
     "profile_id": 3057,
-    "first_name": "Robert",
-    "last_name": "Williams",
+    "first_name": "Player116",
+    "last_name": "Test116",
     "email": "",
-    "initials": "SC",
+    "initials": "P116",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4294,10 +4294,10 @@
   {
     "player_id": 3347,
     "profile_id": 3347,
-    "first_name": "Robert",
-    "last_name": "Phillips",
+    "first_name": "Player117",
+    "last_name": "Test117",
     "email": "",
-    "initials": "WH",
+    "initials": "P117",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4331,10 +4331,10 @@
   {
     "player_id": 2304,
     "profile_id": 2304,
-    "first_name": "E Nefydd",
-    "last_name": "Roberts",
+    "first_name": "Player118",
+    "last_name": "Test118",
     "email": "",
-    "initials": "MS",
+    "initials": "P118",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4368,10 +4368,10 @@
   {
     "player_id": 962,
     "profile_id": 962,
-    "first_name": "Robert",
-    "last_name": "Hands(Stu)",
+    "first_name": "Player119",
+    "last_name": "Test119",
     "email": "",
-    "initials": "IO",
+    "initials": "P119",
     "category": {
       "id": 21,
       "name": "Bronze",
@@ -4405,10 +4405,10 @@
   {
     "player_id": 3052,
     "profile_id": 3052,
-    "first_name": "Donald",
-    "last_name": "Robertson",
+    "first_name": "Player120",
+    "last_name": "Test120",
     "email": "",
-    "initials": "SA",
+    "initials": "P120",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4442,10 +4442,10 @@
   {
     "player_id": 2152,
     "profile_id": 2152,
-    "first_name": "Mohammed",
-    "last_name": "Roberts",
+    "first_name": "Player121",
+    "last_name": "Test121",
     "email": "",
-    "initials": "MG",
+    "initials": "P121",
     "category": {
       "id": 5,
       "name": "Colt",
@@ -4479,10 +4479,10 @@
   {
     "player_id": 3091,
     "profile_id": 3091,
-    "first_name": "Steve",
-    "last_name": "Roberts",
-    "email": "steve_roberts63@yahoo.co.uk",
-    "initials": "SR",
+    "first_name": "Player122",
+    "last_name": "Test122",
+    "email": "",
+    "initials": "P122",
     "category": {
       "id": 40,
       "name": "Zone Member",
@@ -4516,10 +4516,10 @@
   {
     "player_id": 887,
     "profile_id": 887,
-    "first_name": "Robert  G",
-    "last_name": "Ashworth",
+    "first_name": "Player123",
+    "last_name": "Test123",
     "email": "",
-    "initials": "LS",
+    "initials": "P123",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4553,10 +4553,10 @@
   {
     "player_id": 2824,
     "profile_id": 2824,
-    "first_name": "Kimberley",
-    "last_name": "Metcalfe",
+    "first_name": "Player124",
+    "last_name": "Test124",
     "email": "",
-    "initials": "RP",
+    "initials": "P124",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4590,10 +4590,10 @@
   {
     "player_id": 1057,
     "profile_id": 1057,
-    "first_name": "Dennis",
-    "last_name": "Chamberlain",
+    "first_name": "Player125",
+    "last_name": "Test125",
     "email": "",
-    "initials": "HS",
+    "initials": "P125",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4627,10 +4627,10 @@
   {
     "player_id": 2744,
     "profile_id": 2744,
-    "first_name": "Robert",
-    "last_name": "Jones",
-    "email": "rjones9273@yahoo.co.uk",
-    "initials": "RJ",
+    "first_name": "Player126",
+    "last_name": "Test126",
+    "email": "",
+    "initials": "P126",
     "category": {
       "id": 40,
       "name": "Zone Member",
@@ -4664,10 +4664,10 @@
   {
     "player_id": 1393,
     "profile_id": 1393,
-    "first_name": "Robert Stephen",
-    "last_name": "Jones",
+    "first_name": "Player127",
+    "last_name": "Test127",
     "email": "",
-    "initials": "RJ",
+    "initials": "P127",
     "category": {
       "id": 21,
       "name": "Bronze",
@@ -4701,10 +4701,10 @@
   {
     "player_id": 85,
     "profile_id": 85,
-    "first_name": "Frederick-Robert",
-    "last_name": "May",
+    "first_name": "Player128",
+    "last_name": "Test128",
     "email": "",
-    "initials": "AC",
+    "initials": "P128",
     "category": {
       "id": 1,
       "name": "Platinum",
@@ -4738,10 +4738,10 @@
   {
     "player_id": 601,
     "profile_id": 601,
-    "first_name": "David",
-    "last_name": "Roberts-Simcock",
+    "first_name": "Player129",
+    "last_name": "Test129",
     "email": "",
-    "initials": "JR",
+    "initials": "P129",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4775,10 +4775,10 @@
   {
     "player_id": 2753,
     "profile_id": 2753,
-    "first_name": "Robert",
-    "last_name": "Norris",
-    "email": "robert.norris@wsp.com",
-    "initials": "RN",
+    "first_name": "Player130",
+    "last_name": "Test130",
+    "email": "",
+    "initials": "P130",
     "category": {
       "id": 15,
       "name": "Silver",
@@ -4812,10 +4812,10 @@
   {
     "player_id": 3077,
     "profile_id": 3077,
-    "first_name": "Caroline Roberts -",
-    "last_name": "Simcock",
+    "first_name": "Player131",
+    "last_name": "Test131",
     "email": "",
-    "initials": "SF",
+    "initials": "P131",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4849,10 +4849,10 @@
   {
     "player_id": 2734,
     "profile_id": 2734,
-    "first_name": "Robert",
-    "last_name": "Dimes",
-    "email": "eastville66@hotmail.com",
-    "initials": "RD",
+    "first_name": "Player132",
+    "last_name": "Test132",
+    "email": "",
+    "initials": "P132",
     "category": {
       "id": 40,
       "name": "Zone Member",
@@ -4886,10 +4886,10 @@
   {
     "player_id": 1102,
     "profile_id": 1102,
-    "first_name": "Gavin",
-    "last_name": "Welsh",
-    "email": "gavinrobertwelsh@gmail.com",
-    "initials": "JP",
+    "first_name": "Player133",
+    "last_name": "Test133",
+    "email": "",
+    "initials": "P133",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4923,10 +4923,10 @@
   {
     "player_id": 761,
     "profile_id": 761,
-    "first_name": "Daniel",
-    "last_name": "Lambert",
-    "email": "djklambert@icloud.com",
-    "initials": "EA",
+    "first_name": "Player134",
+    "last_name": "Test134",
+    "email": "",
+    "initials": "P134",
     "category": {
       "id": 10,
       "name": "Junior",
@@ -4960,10 +4960,10 @@
   {
     "player_id": 2688,
     "profile_id": 2688,
-    "first_name": "Richard",
-    "last_name": "Roberts",
-    "email": "rm.roberts24@icloud.com",
-    "initials": "RR",
+    "first_name": "Player135",
+    "last_name": "Test135",
+    "email": "",
+    "initials": "P135",
     "category": {
       "id": 8,
       "name": "Guest",
@@ -4997,10 +4997,10 @@
   {
     "player_id": 1351,
     "profile_id": 1351,
-    "first_name": "Jack",
-    "last_name": "Roberts",
-    "email": "jackrgolf94@icloud.com",
-    "initials": "ND",
+    "first_name": "Player136",
+    "last_name": "Test136",
+    "email": "",
+    "initials": "P136",
     "category": {
       "id": 40,
       "name": "Zone Member",

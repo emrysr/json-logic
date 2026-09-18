@@ -41,21 +41,22 @@ pip install -r requirements.txt
 
 ## Running
 
+Standard Django workflow:
+
 ```bash
-python run_admin_demo.py
+./manage.py migrate
+./manage.py seed_demo_data   # creates admin/admin superuser + club_1/club_2 ClubRules
+./manage.py runserver
 ```
 
-This runs migrations, creates a superuser (`admin` / `admin`), seeds two
-`ClubRules` records (`club_1`, `club_2`), and starts the dev server on
-`0.0.0.0:8765`.
-
-- **Admin:** http://localhost:8765/admin/ (login `admin` / `admin`) -
+- **Admin:** http://localhost:8000/admin/ (login `admin` / `admin`) -
   `Club ruless` shows the FormKit-rendered booking rules for each club.
-- **Logic demo:** http://localhost:8765/logic-demo/ - pick a teetime (from the
-  mocked teesheet's actual bookable slots) and see which players are eligible
-  to book, broken down by category rule and by minimum-handicap rule
-  independently, plus the raw input data and rule trees used to compute it.
-- **API:** http://localhost:8765/api/logic/booking - the raw json-logic rule
+- **Logic demo:** http://localhost:8000/ (or http://localhost:8000/logic-demo/)
+  - pick a teetime (from the mocked teesheet's actual bookable slots) and see
+  which players are eligible to book, broken down by category rule and by
+  minimum-handicap rule independently, plus the raw input data and rule trees
+  used to compute it.
+- **API:** http://localhost:8000/api/logic/booking - the raw json-logic rule
   trees, as fetched by the demo page's JS.
 
 ## Mock data
@@ -67,5 +68,5 @@ counterparts' JSON structure, but hand-edited to make the rule filtering
 visibly do something (e.g. the `Guest` category is restricted to afternoon
 bookings, `Colt` to before-noon bookings). Edit these files directly to try
 different scenarios; the page re-reads them on every request, no restart
-needed - `admin_demo.sqlite3` (superuser + `ClubRules` seed data) is the only
-thing that needs the dev server itself restarted to pick up code changes.
+needed. `./manage.py runserver` auto-reloads on Python/template changes like
+any standard Django project.
