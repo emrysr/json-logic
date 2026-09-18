@@ -10,13 +10,22 @@
 <section class="section">
   <div class="container">
     <h1 class="title">Booking Logic Demo</h1>
-    <h2 class="subtitle">Eligible players for a given teetime, via json-logic shared from /api/logic/booking</h2>
+    <h2 class="subtitle">API driven eligiblility filters - uses <a href="https://jsonlogic.com/">JSON-Logic</a> format <a href="/api/logic/booking/">(/api/logic/booking)</a></h2>
     <p class="mb-4"><a href="{% url 'admin:admin_demo_clubrules_change' 1 %}">Edit club_1's booking rules in the admin &rarr;</a></p>
 
-    <div class="box">
-      <h3 class="title is-5">Check a teetime</h3>
-      <p class="help mb-4">Loaded server-side on first render via admin_demo.logic (Python). /api/logic/booking is fetched as soon as this page loads; the button below just re-runs the same rules client-side via json-logic-js, against whichever time you pick.</p>
+    <div class="tags mb-4">
+      <a class="tag is-link" href="#check-teetime">Check a teetime</a>
+      <a class="tag is-link" href="#parameters">Parameters</a>
+      <a class="tag is-link" href="#rule-output-section">json-logic rule</a>
+    </div>
 
+    <div class="box" id="check-teetime">
+      <details open>
+      <summary class="title is-5">Check a teetime</summary>
+      <p>This form simulates a player lookup.</p>
+      <p>The availability of any player, named "test", changes throught the day...</p>
+      <p class="help mb-4">Loaded server-side on first render via admin_demo.logic (Python). /api/logic/booking is fetched as soon as this page loads; the button below just re-runs the same rules client-side via json-logic-js, against whichever time you pick.</p>
+      <div class="box">
       <div class="columns">
         <div class="column">
           <div class="field">
@@ -29,10 +38,12 @@
         </div>
 
         <div class="column">
+		<div class="columns">
+			<div class="column">
           <div class="field">
             <label class="label">Hour</label>
             <div class="control">
-              <div class="select">
+              <div class="select is-fullwidth">
                 <select id="teetime-hour">
                   {% for h in hour_options %}
                   <option value="{{ h.hour }}"{% if h.hour == default_hour %} selected{% endif %}{% if not h.bookable %} disabled{% endif %}>{{ h.hour }}</option>
@@ -55,9 +66,13 @@
                 </select>
               </div>
             </div>
-            <p class="help">Only the teesheet's actual bookable slots are selectable - unavailable ones are disabled.</p>
           </div>
         </div>
+	</div>
+	<p class="help">Only the teesheet's actual bookable slots are selectable - unavailable ones are disabled.
+
+	</p>
+	</div>
 
         <div class="column">
           <div class="field">
@@ -71,13 +86,14 @@
       </div>
 
       <div class="is-flex is-justify-content-space-between">
-      <button id="check-eligibility" class="button is-link">Find Eligible Players</button>
-      <p id="total-eligible"></p>
+        <button id="check-eligibility" class="button is-link">Find Eligible Players</button>
+        <p id="total-eligible" class="tag is-large">{{initial_rows|length}} Players</p>
       </div>
       <div class="content mt-4">
         <p><strong>Eligible category ids:</strong> <span id="eligible-categories" class="tag">{{ initial_eligible_category_ids|join:", " }}</span></p>
         <p><strong>Min handicap:</strong> <span id="min-handicap" class="tag">{{ min_handicap }}</span></p>
         <p class="help">club_1.ClubRules.rules.bookings.min_handicap</p>
+      </div>
       </div>
 
       
@@ -89,17 +105,17 @@
         <tbody id="results-body">
           {% for player, category_ok, handicap_ok in initial_rows %}
           <tr{% if not category_ok or not handicap_ok %} class="has-text-grey-light"{% endif %}>
-            <td>{{ player.first_name }} {{ player.last_name }}</td>
+		  <td>{{ player.first_name }} {{ player.last_name }} ({{player.gender.name}})</td>
             <td>{{ player.category.name }}</td>
             <td>{{ player.handicap }}</td>
             <td>{{ player.club.name }}</td>
             <td>
-              <span class="tag {% if category_ok %}is-success{% else %}is-danger is-light{% endif %}"{% if not category_ok %} title="{{ category_message }}"{% endif %}>
+		    <span class="tag {% if category_ok %}is-success{% else %}is-danger{% endif %}"{% if not category_ok %} title="{{ category_message }}"{% endif %}>
                 {% if category_ok %}Enabled{% else %}Disabled{% endif %}
               </span>
             </td>
             <td>
-              <span class="tag {% if handicap_ok %}is-success{% else %}is-danger is-light{% endif %}"{% if not handicap_ok %} title="{{ handicap_message }}"{% endif %}>
+              <span class="tag {% if handicap_ok %}is-success{% else %}is-danger{% endif %}"{% if not handicap_ok %} title="{{ handicap_message }}"{% endif %}>
                 {% if handicap_ok %}Enabled{% else %}Disabled{% endif %}
               </span>
             </td>
@@ -107,10 +123,12 @@
           {% endfor %}
         </tbody>
       </table>
+      </details>
     </div>
 
-    <div class="box">
-      <h3 class="title is-5">Raw input data</h3>
+    <div class="box" id="raw-input-data">
+      <details>
+      <summary class="title is-5">Raw input data</summary>
       <p class="help mb-4">Untouched - exactly the fixture data (mocked API responses), before anything is merged in. Cross-reference any row here against the parameters below to work out the result by hand.</p>
 
       <details class="mb-4">
@@ -122,17 +140,22 @@
         <summary><strong>Players (raw)</strong></summary>
         <pre id="raw-players-output">{{ initial_raw_players_json }}</pre>
       </details>
+      </details>
     </div>
 
-    <div class="box">
-      <h3 class="title is-5">Parameters used for this check</h3>
+    <div class="box" id="parameters">
+      <details open>
+      <summary class="title is-5">Parameters used for this check</summary>
       <p class="help mb-4">Everything computed from your chosen time, merged onto each rule/player right before evaluation (as target_day/target_time/eligible_category_ids/min_handicap) - not part of the raw data itself.</p>
       <pre id="parameters-output">{{ initial_parameters_json }}</pre>
+      </details>
     </div>
 
-    <div class="box">
-      <h3 class="title is-5">json-logic rule (rendered server-side; re-fetched from /api/logic/booking on re-check)</h3>
+    <div class="box" id="rule-output-section">
+      <details>
+      <summary class="title is-5">json-logic rule (rendered server-side; re-fetched from /api/logic/booking on re-check)</summary>
       <pre id="rule-output">{{ initial_rule_output_json }}</pre>
+      </details>
     </div>
   </div>
 </section>
@@ -257,7 +280,7 @@ async function checkEligibility() {
     `;
     tbody.appendChild(tr);
   });
-  document.getElementById('total-eligible').textContent = PLAYERS.filter((p, i) => categoryFlags[i] && handicapFlags[i]).length;
+	  document.getElementById('total-eligible').textContent = `${PLAYERS.filter((p, i) => categoryFlags[i] && handicapFlags[i]).length} Players`;
 }
 
 document.getElementById('check-eligibility').addEventListener('click', checkEligibility);
