@@ -4,6 +4,9 @@ A standalone Django proof-of-concept exploring **json-logic as a single source o
 truth for business rules shared between Python (server-side) and JavaScript
 (client-side)**, built around a golf club booking scenario.
 
+> ABSTRACT SYNTAX TREE (AST)
+> is a structured, tree-like representation of code or logic statements.
+
 ## What this demonstrates
 
 - **A schema-driven admin form.** `ClubRules` (`admin_demo/models.py`) stores a
