@@ -118,12 +118,13 @@ flowchart TD
     API -->|"Client JS Evaluator (<1ms runtime)"| Client["Client JS Evaluator"]
 ```
 
-Key Architectural Advantages
-Zero Runtime AI Latency: Instead of invoking an LLM directly during a live booking request—which introduces unacceptable multi-second overhead and probability drift—the LLM acts purely as an authoring assistant during policy configuration.
+### Key Architectural Advantages
 
-Deterministic Execution: The AI generates a structured, human-readable Abstract Syntax Tree (AST) once. At runtime, standard native engines (json-logic-qubit and json-logic-js) evaluate the resulting AST in microseconds with 100% mathematical precision.
+__Zero Runtime AI Latency__: Instead of invoking an LLM directly during a live booking request—which introduces unacceptable multi-second overhead and probability drift—the LLM acts purely as an authoring assistant during policy configuration.
 
-Human-in-the-Loop Safeguards: Because json-logic is fundamentally just a JSON object tree, generated rules can be visually rendered, tested against dry-run player data, and approved by a club manager inside the FormKit admin UI before being saved to production.
+__Deterministic Execution__: The AI generates a structured, human-readable Abstract Syntax Tree (AST) once. At runtime, standard native engines (json-logic-qubit and json-logic-js) evaluate the resulting AST in microseconds with 100% mathematical precision.
 
-Natural Language Admin Experience: Club staff can write rules using intuitive prompts (e.g., "Flexi members cannot book peak weekend morning slots unless accompanied by a Full Golf member"), automatically compiling them into valid rule trees without needing deep knowledge of the underlying schema.
+__Human-in-the-Loop Safeguards__: Because json-logic is fundamentally just a JSON object tree, generated rules can be visually rendered, tested against dry-run player data, and approved by a club manager inside the FormKit admin UI before being saved to production.
+
+__Natural Language Admin Experience__: Club staff can write rules using intuitive prompts (e.g., "Flexi members cannot book peak weekend morning slots unless accompanied by a Full Golf member"), automatically compiling them into valid rule trees without needing deep knowledge of the underlying schema.
 
