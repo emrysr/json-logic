@@ -101,3 +101,29 @@ visibly do something (e.g. the `Guest` category is restricted to afternoon
 bookings, `Colt` to before-noon bookings). Edit these files directly to try
 different scenarios; the page re-reads them on every request, no restart
 needed.
+
+
+## Future Work & Next Steps: LLM-Assisted AST Generation
+
+While this proof-of-concept proves that standard `json-logic` engines execute business rules cleanly and deterministically across Python and JS, building and maintaining complex nested rule trees by hand can still be a friction point for non-technical administrators (e.g., club managers writing custom seasonal policies).
+
+To bridge this gap without compromising on sub-millisecond execution speeds, future iterations of this platform will explore **design-time natural language rule generation**:
+
+```mermaid
+flowchart TD
+    Admin["Club Admin"] -->|"Describes policy in plain English via Admin UI"| Generator["LLM / AI Rule Generator"]
+    Generator -->|"Parses prompt & outputs valid json-logic AST"| Editor["Visual Schema/Logic Editor"]
+    Review["Human-in-the-loop review/validation"] -.-> Editor
+    Editor -->|"Saved as JSON in ClubRules"| API["Django / json-logic API"]
+    API -->|"Client JS Evaluator (<1ms runtime)"| Client["Client JS Evaluator"]
+```
+
+Key Architectural Advantages
+Zero Runtime AI Latency: Instead of invoking an LLM directly during a live booking request—which introduces unacceptable multi-second overhead and probability drift—the LLM acts purely as an authoring assistant during policy configuration.
+
+Deterministic Execution: The AI generates a structured, human-readable Abstract Syntax Tree (AST) once. At runtime, standard native engines (json-logic-qubit and json-logic-js) evaluate the resulting AST in microseconds with 100% mathematical precision.
+
+Human-in-the-Loop Safeguards: Because json-logic is fundamentally just a JSON object tree, generated rules can be visually rendered, tested against dry-run player data, and approved by a club manager inside the FormKit admin UI before being saved to production.
+
+Natural Language Admin Experience: Club staff can write rules using intuitive prompts (e.g., "Flexi members cannot book peak weekend morning slots unless accompanied by a Full Golf member"), automatically compiling them into valid rule trees without needing deep knowledge of the underlying schema.
+
